@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <!-- Exercise 6 -->
+    <!-- POST sends the input data in the request body -->
+    <h2>POST</h2>
+    <form method="POST" action="/showPost">
+      <label>First Name<input type="text" name="first-name" id="first-name" /></label>
+      <label>Last Name<input type="text" name="last-name" id="last-name" /></label>
+      <button>Submit POST</button>
+    </form>
+    <hr />
+    <!-- Exercise 7 -->
+    <!-- GET puts the input data in the URL query -->
+    <!-- On the server you can retreive that data from req.query -->
+    <h2>GET</h2>
+    <form method="GET" action="/showPost">
+      <label>First Name<input type="text" name="first-name" id="first-name" /></label>
+      <label>Last Name<input type="text" name="last-name" id="last-name" /></label>
+      <button>Submit GET</button>
+    </form>
+  </body>
+</html>

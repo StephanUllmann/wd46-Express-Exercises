@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Forms can only issue GET or POST usually -->
+    <form method="POST" action="/" enctype="application/x-www-form-urlencoded">
+      <!-- method_override looks for _method field and replaces the form's method with the given value - PUT -->
+      <input type="hidden" name="_method" value="PUT" />
+      <button type="submit">Use PUT on endpoint "/"</button>
+    </form>
+  </body>
+</html>
